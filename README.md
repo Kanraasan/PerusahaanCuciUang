@@ -1,5 +1,1 @@
-Project FIle by ;\n
-Ataya Fikri R\n
-Bagas Pratama\n
-Fazza Avri N\n
-Kemuel Ethnan R
+Disini kita membuat sebuah website Company Profile untuk menyelesaikan tugas dari Pak Wahyudi
