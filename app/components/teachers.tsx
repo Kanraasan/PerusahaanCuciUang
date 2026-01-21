@@ -21,23 +21,29 @@ const DUMMY_TEACHERS = [
 export default function Teachers() {
   const [teachers, setTeachers] = useState<Teacher[]>(DUMMY_TEACHERS);
 
-  useEffect(() => {
-    const fetchTeachers = async () => {
-      try {
-        const querySnapshot = await getDocs(collection(db, "teachers"));
-        if (!querySnapshot.empty) {
-            const fetched = querySnapshot.docs.map(doc => ({
-                id: doc.id,
-                ...doc.data()
-            } as Teacher));
-            setTeachers(fetched);
-        }
-      } catch (error) {
-        console.error("Error fetching teachers:", error);
+useEffect(() => {
+  const fetchTeachers = async () => {
+    try {
+      const querySnapshot = await getDocs(collection(db, "teachers"));
+      if (!querySnapshot.empty) {
+        const fetched = querySnapshot.docs.map(doc => {
+          const data = doc.data();
+          return {
+            id: doc.id,
+            name: data["name"] || "No Name",
+            role: data["role"] || "No Role",
+            photoUrl: data["photoUrl"] || "",
+          } as Teacher;
+        });
+        setTeachers(fetched);
       }
-    };
-    fetchTeachers();
-  }, []);
+    } catch (error) {
+      console.error("Error fetching teachers:", error);
+    }
+  };
+
+  fetchTeachers();
+}, []);
 
   return (
     <section id="teachers" className="py-20 bg-zinc-50 dark:bg-black">

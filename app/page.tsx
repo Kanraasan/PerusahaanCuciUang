@@ -22,9 +22,12 @@ export default function Home() {
               untuk mempersiapkan mereka menghadapi industri 4.0.
             </p>
           </div>
-          <div className="bg-gray-200 dark:bg-zinc-800 rounded-2xl h-80 w-full animate-pulse flex items-center justify-center text-gray-500">
-             {/* Placeholder for an image */}
-             <span>Video / Image Profile</span>
+          <div className="bg-gray-200 dark:bg-zinc-800 rounded-2xl h-80 w-full overflow-hidden">
+            <img 
+              src="https://smkn2solo.sch.id/wp-content/uploads/2025/09/smknegeri2surakarta_cover-768x447.jpg"
+              alt="SMK Negeri 2 Surakarta"
+              className="w-full h-full object-cover rounded-2xl"
+            />
           </div>
         </div>
       </section>

@@ -17,14 +17,14 @@ export default function Footer() {
                 <MapPin className="text-blue-600 mt-1" />
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">Alamat</p>
-                  <p className="text-gray-600 dark:text-gray-400">Jl. Pendidikan No. 1, Kota Imajinasi, Indonesia 12345</p>
+                  <p className="text-gray-600 dark:text-gray-400">Jl. Adi Sucipto No.33, Manahan, Kec. Banjarsari, Kota Surakarta, Jawa Tengah 57139</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
                 <Phone className="text-blue-600 mt-1" />
                 <div>
                   <p className="font-semibold text-gray-900 dark:text-white">Telepon</p>
-                  <p className="text-gray-600 dark:text-gray-400">+62 812-3456-7890</p>
+                  <p className="text-gray-600 dark:text-gray-400">0271714901</p>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ export default function Footer() {
           {/* Map */}
           <div className="h-[300px] w-full rounded-2xl overflow-hidden shadow-lg border border-gray-200 dark:border-zinc-800">
              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.468725227787!2d106.82099!3d-6.19699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41f2c62c92d%3A0x738324391234!2sMonumen%20Nasional!5e0!3m2!1sen!2sid!4v1645000000000!5m2!1sen!2sid" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d247.19888966917893!2d110.80125245971348!3d-7.555098901156577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a14234667a3fd%3A0xc2dc8c1f0bdce20f!2sSMK%20Negeri%202%20Surakarta!5e0!3m2!1sid!2sid!4v1768961971738!5m2!1sid!2sid" 
                 width="100%" 
                 height="100%" 
                 style={{ border: 0 }} 
