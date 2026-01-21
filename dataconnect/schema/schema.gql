@@ -1,0 +1,87 @@
+type Department @table {
+  name: String!
+  vision: String!
+  mission: String!
+  createdAt: Timestamp!
+  description: String
+  contactEmail: String
+  contactPhone: String
+  departmentHead: String
+}
+
+type Curriculum @table {
+  subjectName: String!
+  semester: String!
+  category: String!
+  createdAt: Timestamp!
+  department: Department
+  description: String
+  learningOutcomes: String
+}
+
+type Facility @table {
+  name: String!
+  type: String!
+  createdAt: Timestamp!
+  department: Department
+  description: String
+  capacity: Int
+  imageUrl: String
+}
+
+type Achievement @table {
+  title: String!
+  date: Date!
+  type: String!
+  createdAt: Timestamp!
+  department: Department
+  description: String
+  imageUrl: String
+  externalLink: String
+}
+
+type Testimonial @table {
+  authorName: String!
+  authorRole: String!
+  content: String!
+  createdAt: Timestamp!
+  department: Department
+  authorPhotoUrl: String
+  yearGraduated: Int
+}
+
+type News @table {
+  title: String!
+  publishDate: Date!
+  content: String!
+  createdAt: Timestamp!
+  department: Department
+  imageUrl: String
+  author: String
+}
+
+type GalleryImage @table {
+  imageUrl: String!
+  caption: String!
+  createdAt: Timestamp!
+  department: Department
+  eventDate: Date
+  photographer: String
+}
+
+type Teacher @table {
+  name: String!
+  role: String!
+  bio: String
+  photoUrl: String
+  department: Department
+  createdAt: Timestamp!
+}
+
+type Collaborator @table {
+  name: String!
+  logoUrl: String!
+  websiteUrl: String
+  department: Department
+  createdAt: Timestamp!
+}
